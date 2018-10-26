@@ -5,6 +5,7 @@
     <title> Najib Jamil A </title>
   </head>
   <body>
+    <h3>Tambah Data</h3>
     <form method="post" action="ok.php">
       <table>
         <tr>

@@ -23,7 +23,7 @@ $students = query("SELECT * FROM users");
 
 <html>
 	<head>
-		<title></title>
+		<title>Tabel</title>
 	</head>
 	<body>
 		<table border="1px" cellpadding="10" cellspacing="0">
@@ -32,6 +32,7 @@ $students = query("SELECT * FROM users");
 	 			<td bgcolor="#6f87f2" align="center">Username</td>
 	 			<td bgcolor="#6f87f2" align="center">Level</td>
 	 			<td bgcolor="#6f87f2" align="center">Fullname</td>
+				<td bgcolor="#6f87f2" align="center">Actions</td>
 	 		</tr>
 	 		<?php foreach($students as $student) : ?>
 				 <tr>
@@ -39,8 +40,13 @@ $students = query("SELECT * FROM users");
 				 	<td><?= $student["username"] ?></td>
 				 	<td><?= $student["level"] ?></td>
 				 	<td><?= $student["fullname"] ?></td>
+					<td>
+						<a href="ditedit.php?id=<?php echo $student['id']; ?>">Ubah</a>
+						<a href="delete.php?id=<?php echo $student['id']; ?>">Hapus</a>
+					</td>
 				 </tr>
 				<?php endforeach; ?>
 	 	</table>
+		<a href="formr.php">Tambah (+)</a>
  	</body>
 </html>
