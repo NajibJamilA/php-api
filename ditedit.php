@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Edit Data</title>
+    <title>Ubah Data</title>
   </head>
   <body>
     <h3>Edit Data</h3>
