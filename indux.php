@@ -26,6 +26,7 @@ $students = query("SELECT * FROM users");
 		<title>Tabel</title>
 	</head>
 	<body>
+		<h3>TABEL</h3>
 		<table border="1px" cellpadding="10" cellspacing="0">
 	 		<tr>
 	 			<td bgcolor="#6f87f2" align="center">Id</td>
